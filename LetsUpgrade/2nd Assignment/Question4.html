@@ -1,0 +1,76 @@
+<!-- Showing objects having country India and age less than 30 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const data= [{
+            name : "Dheeraj",
+            age : 22,
+            country : "India",
+            hobbies : ["Watching Movie","Coding","Treking","chilling with friends"]
+        },
+        {
+            name : "Vijay",
+            age : 31,
+            country : "India",
+            hobbies : ["Siinging","Cooking","Drawing","chilling "]
+        },
+        {
+            name : "Deepak",
+            age : 10,
+            country : "India",
+            hobbies : ["Watching Movie","Coding","Treking","chilling with friends"]
+        },
+        {
+            name : "Ashish",
+            age : 15,
+            country : "America",
+            hobbies : ["Watching Movie","Coding","Treking","chilling with friends"]
+        },
+        {
+            name : "kanchan",
+            age : 45,
+            country : "Russia",
+            hobbies : ["Watching Movie","Coding","Treking","chilling with friends"]
+        },
+        {
+            name : "Sandeep",
+            age : 50,
+            country : "India",
+            hobbies : ["painting","Coding","Treking","chilling with friends"]
+        },
+        {
+            name : "Astha",
+            age : 29,
+            country : "UK",
+            hobbies : [" Movie","cooking","Treking","video games"]
+        }]
+
+        const byAge = () => {
+            data.forEach((item) => {
+                if(item.age < 30){
+                    console.log("Age less than 30",item);
+                }
+                
+            } )
+        }
+
+        const byCountry = () => {
+            data.forEach((item) => {
+                if(item.country == "India"){
+                    console.log("Living in India",item);
+                }
+                
+            } )
+        }
+        byAge();
+        byCountry();
+    </script>
+</body>
+</html>

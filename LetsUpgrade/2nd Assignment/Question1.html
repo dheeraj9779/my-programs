@@ -1,0 +1,31 @@
+<!-- Changing the image in different button click -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://tse4.mm.bing.net/th?id=OIP.YbzAV4a5qghVAXwjR7mmpgHaDt&pid=Api&P=0&w=334&h=168" id="image">
+    <br/>
+    <button onClick="img1()">Button1</button>
+    <button onClick="img2()">Button2</button>
+    <button onClick="img3()">Button3</button>
+    <script>
+   function img1(){
+    const img=document.getElementById("image");
+    img.src="https://tse4.mm.bing.net/th?id=OIP.YbzAV4a5qghVAXwjR7mmpgHaDt&pid=Api&P=0&w=334&h=168"
+   }
+   function img2(){
+    const img=document.getElementById("image");
+    img.src="https://tse2.mm.bing.net/th?id=OIP.44pyf3flkctxh3L7wjAbiAHaD2&pid=Api&P=0&w=333&h=174"
+   }
+   function img3(){
+    const img=document.getElementById("image");
+    img.src="https://tse1.mm.bing.net/th?id=OIP.jDITucaCoDZRmDlxEA7EbwHaD5&pid=Api&P=0&w=326&h=172"
+   }
+    </script>
+</body>
+</html>

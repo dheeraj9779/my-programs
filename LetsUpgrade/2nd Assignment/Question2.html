@@ -1,0 +1,23 @@
+<!-- showing the value of a Input field to the second -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <input  type="text" id="first" placeholder="Enter Something" value="">
+    <input  type="text" id="second" placeholder="Reflect Here" value="">
+    <button onClick="changeText()">Click to Reflect</button>
+    <script>
+        function changeText(){
+            const frst =  document.getElementById("first").value;
+            const scnd =  document.getElementById("second");
+            scnd.value=frst;
+        }
+      </script>
+</body>
+</html>
