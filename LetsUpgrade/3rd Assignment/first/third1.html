@@ -1,0 +1,77 @@
+<!-- Data Management, In this only static data is showing no permanent storage -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD op</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .main_div {
+            height: 500px;
+            margin: auto;
+            background: #a4e0d8;
+            width: 700px;
+            padding: 30px;
+            margin-top: 7%;
+        }
+
+        .table {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            height: 40px;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .input-block {
+            margin: 20px 0px 20px 0px;
+        }
+
+        input {
+            height: 30px;
+            text-indent: 20px;
+        }
+
+        .heading {
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_div">
+        <div class="heading">
+            <h2>Data Manangement</h2>
+        </div>
+        <div class="input-block"><input type="text" id="search-box" placeholder="Search here.."
+                onkeyup="searchItem()">
+                <div><small><b>*Note:</b> You can search by either Source or Destination</small></div></div>
+        <table class="table" border="1" cellspacing="0">
+            <thead>
+                <th>Sr no.</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Salary</th>
+                <th>Actions</th>
+            </thead>
+            <tbody id="tdata"></tbody>
+        </table>
+    </div>
+    <script src="third1.js"></script>
+</body>
+
+</html>

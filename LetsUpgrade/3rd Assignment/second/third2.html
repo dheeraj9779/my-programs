@@ -1,0 +1,96 @@
+<!-- Bus Management, In that user can add the details and showing,deleting and searching it with Permanent Storage(LocalStroage) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD op</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .main_div {
+            height: 500px;
+            margin: auto;
+            background: #a4e0d8;
+            width: 700px;
+            padding: 30px;
+            margin-top: 7%;
+        }
+
+        .table {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            height: 40px;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .input-block {
+            margin: 20px 0px 20px 0px;
+        }
+
+        input {
+            height: 30px;
+            text-indent: 20px;
+            margin-bottom: 5px;
+        }
+
+        .heading {
+            color: red;
+            text-align: center;
+        }
+       #no-data{
+           text-align: center;
+       }
+       button{
+           padding: 5px;
+            background: lightgray; 
+       }
+    </style>
+</head>
+
+<body>
+    <div class="main_div">
+        <div class="heading">
+            <h2>Bus Service</h2>
+        </div>
+        <div>
+            <form onsubmit="addBus(event)">
+                <input type="text" id="name" placeholder="Bus Name">
+                <input type="text" id="src" placeholder="Source">
+                <input type="text" id="dest" placeholder="Destination">
+                <input type="text" id="num" placeholder="Bus No.">
+                <input type="number" id="cap" placeholder="Capacity">
+                <button type="submit">Add Bus</button>
+            </form>
+        </div>
+        <div class="input-block"><input type="text" id="search-box" placeholder="Search here.." onkeyup="searchItem()">
+        <div><small><b>*Note:</b> You can search by either Source or Destination</small></div></div>
+        <table class="table" border="1" cellspacing="0">
+            <thead>
+                <th>Sr no.</th>
+                <th>Bus Name</th>
+                <th>Source</th>
+                <th>Destination</th>
+                <th>Bus No.</th>
+                <th>Capacity</th>
+                <th >Action</th>
+            </thead>
+            <tbody id="tdata"></tbody>
+        </table>
+        <div id="no-data"></div>
+    </div>
+    <script src="third2.js"></script>
+</body>
+
+</html>
