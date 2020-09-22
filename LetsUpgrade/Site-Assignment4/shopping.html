@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property wale</title>
+    <link rel="stylesheet" href="shopping.css">
+</head>
+
+<body>
+    <div class="main-div">
+    <div class="header">
+        <h1>Property wale</h1>
+        <div class="search"><input type="text"  placeholder="Search.." onkeyup="searchProperty(this.value)"></div>
+        <select name="price"  id="mySelect" onChange="range(this.value)">
+            <option value="">All</option>
+            <option value="maximum">Maximum</option>
+            <option value="minimum">Minimum</option>
+        </select>
+    </div>
+
+    <div class="properties">
+        <div class="propertyWrapper" id="productWrapper">  
+        </div>
+        <h1>Store [<span id="cart-count"></span>]</h1>
+        <div class="propertyWrapper" id="store">  
+        </div>
+    </div>
+    <div class="footer">Made By:Dheeraj Sharma</div>
+    </div>
+    <script src="shopping.js"></script>
+</body>
+
+</html>
